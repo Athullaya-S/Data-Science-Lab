@@ -1,0 +1,22 @@
+arr=[]
+n=int(input("Enter the number of elements:"))
+for i in range(n):
+    arr.append(int(input(f"Enter elements {i+1}:")))
+print(f"The array is:{arr}")
+for i in range(n):
+    for j in range(i+1,n):
+        if arr[i]>arr[j]:
+            temp=arr[i]
+            arr[i]=arr[j]
+            arr[j]=temp
+print("sorted array is:",arr)
+
+==============Output===============C:\Users\mlm\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\mlm\PycharmProjects\pythonProject\bubblesort.py 
+Enter the number of elements:3
+Enter elements 1:4
+Enter elements 2:8
+Enter elements 3:2
+The array is:[4, 8, 2]
+sorted array is: [2, 4, 8]
+
+Process finished with exit code 0
