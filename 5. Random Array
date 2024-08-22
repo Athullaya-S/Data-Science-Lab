@@ -1,0 +1,27 @@
+mport numpy as np
+n=np.random.randint(10,size=(2,2))
+print(n)
+
+print("determinant")
+print(np.linalg.det(n))
+
+print("inverse")
+print(np.linalg.inv(n))
+
+print("matrix Rank")
+print(np.linalg.matrix_rank(n))
+
+============================
+          Output
+C:\Users\mlm\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\mlm\PycharmProjects\pythonProject\randomarray.py 
+[[1 0]
+ [7 6]]
+determinant
+6.0
+inverse
+[[ 1.          0.        ]
+ [-1.16666667  0.16666667]]
+matrix Rank
+2
+
+Process finished with exit code 0
